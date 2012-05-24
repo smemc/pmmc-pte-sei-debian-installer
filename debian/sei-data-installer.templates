@@ -1,0 +1,7 @@
+Template: sei-installer/httpget
+Type: boolean
+Default: true
+_Description: Do you accept the license and do you want to download SEI now?
+ SEI is to be downloaded from www.orientadores.pmmc.com.br/cae/sei. This
+ can be done automatically now. The distribution license of SEI is available at
+ www.orientadores.pmmc.com.br/cae/sei.
