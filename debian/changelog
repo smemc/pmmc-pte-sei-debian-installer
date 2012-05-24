@@ -1,3 +1,10 @@
+sei (1.12.1.2oi4-1) unstable; urgency=low
+
+  * [e067910] Initial upstream branch
+  * [b71dd72] New upstream version 1.12.1.2oi4
+
+ -- Laércio de Sousa <lbsousajr@gmail.com>  Thu, 24 May 2012 14:39:36 -0300
+
 sei (1.12.1.2oi3-1) UNRELEASED; urgency=low
 
   * Initial release
