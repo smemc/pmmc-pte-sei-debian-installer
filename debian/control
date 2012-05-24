@@ -1,0 +1,104 @@
+Source: sei
+Section: contrib/games
+Priority: extra
+Maintainer: Laércio de Sousa <lbsousajr@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), librsvg2-bin
+Standards-Version: 3.9.3
+Homepage: http://www.orientadores.pmmc.com.br/cae/sei
+Vcs-Git: git://github.com/oiteam/pmmc-pte-sei.git
+Vcs-Browser: https://github.com/oiteam/pmmc-pte-sei.git
+
+Package: sei
+Architecture: all
+Section: contrib/oldlibs
+Depends: ${misc:Depends}, sei-installer (= ${binary:Version})
+Description: Transitional package to sei-installer
+ This is just a dummy transitional package to new sei-installer.
+ It can be safely removed after sei-installer is installed.
+
+Package: sei-data
+Architecture: all
+Section: contrib/oldlibs
+Depends: ${misc:Depends}, sei-data-installer (= ${binary:Version})
+Description: Transitional package to sei-data-installer
+ This is just a dummy transitional package to new sei-data-installer.
+ It can be safely removed after sei-data-installer is installed.
+
+Package: sei-doc
+Architecture: all
+Section: contrib/oldlibs
+Depends: ${misc:Depends}, sei-doc-installer (= ${binary:Version})
+Description: Transitional package to sei-doc-installer
+ This is just a dummy transitional package to new sei-doc-installer.
+ It can be safely removed after sei-doc-installer is installed.
+
+Package: sei-installer-common
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: wget
+Suggests: sei-data-installer (= ${binary:Version}), sei-doc-installer (= ${binary:Version})
+Description: Automated downloader/installer for SEI (common files)
+ This package contains common files for
+ sei-data-installer and sei-doc-installer.
+
+Package: sei-installer
+Architecture: all
+Depends: ${misc:Depends}, sei-client, sei-data-installer (= ${binary:Version}), sei-doc-installer (= ${binary:Version})
+Conflicts: sei (<< ${binary:Version})
+Replaces: sei (<< ${binary:Version})
+Provides: sei
+Description: Metapackage for SEI standalone downloader/installer
+ This simple metapackage installs all necessary components of SEI
+ for standalone use.
+
+Package: sei-data-installer
+Architecture: all
+Depends: ${misc:Depends}, sei-installer-common (= ${binary:Version})
+Conflicts: sei-data (<< ${binary:Version}), sei-installer (<< ${binary:Version})
+Replaces: sei-data (<< ${binary:Version})
+Provides: sei-data
+Description: Automated downloader/installer for SEI (data)
+ This metapackage downloads and Installs the SEI data.
+ SEI (Software de Educação Infantil)
+ is a set of games for preschool education, as part of the Educational
+ Technology Program of Mogi das Cruzes, SP, Brazil.
+ .
+ WARNING: Installing this Ubuntu package causes the SEI tarball to
+ be downloaded from the "Orientadores de Informática" web site.
+ The distribution license of SEI is available at
+ www.orientadores.pmmc.com.br/cae/sei. Installing this Ubuntu package implies
+ that you have accepted the terms of that license.
+
+Package: sei-doc-installer
+Architecture: all
+Depends: ${misc:Depends}, sei-installer-common (= ${binary:Version})
+Recommends: xdg-utils
+Conflicts: sei-doc (<< ${binary:Version}), sei-installer (<< ${binary:Version})
+Replaces: sei-doc (<< ${binary:Version})
+Provides: sei-doc
+Description: Automated downloader/installer for SEI (docs)
+ Downloads and Installs the SEI documentation.
+ SEI (Software de Educação Infantil) is a set of games for preschool
+ education, as part of the Educational Technology Program of Mogi das Cruzes,
+ SP, Brazil.
+ .
+ WARNING: Installing this Ubuntu package causes the SEI tarball to
+ be downloaded from the "Orientadores de Informática" web site.
+ The distribution license of SEI is available at
+ www.orientadores.pmmc.com.br/cae/sei. Installing this Ubuntu package implies
+ that you have accepted the terms of that license.
+
+Package: sei-client-minimal
+Architecture: all
+Depends: ${misc:Depends}, pmmc-pte-flashplayer, sei-data
+Provides: sei-client
+Description: Minimal launcher for SEI
+ This package install a minimal script to launch SEI from a local installation.
+
+Package: sei-server
+Architecture: all
+Depends: ${misc:Depends}, apache2, sei-data
+Recommends: sei-doc
+Suggests: sei-client
+Description: SEI web server
+ This metapackage makes a SEI installation available in a web server.
