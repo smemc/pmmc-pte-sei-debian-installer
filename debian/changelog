@@ -1,3 +1,9 @@
+sei (1.12.1.2oi4-2) unstable; urgency=low
+
+  * Dummy new release. Nothing to do.
+
+ -- Laércio de Sousa <lbsousajr@gmail.com>  Wed, 30 May 2012 10:35:59 -0300
+
 sei (1.12.1.2oi4-1) unstable; urgency=low
 
   * [e067910] Initial upstream branch
