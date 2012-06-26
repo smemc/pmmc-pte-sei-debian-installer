@@ -1,0 +1,34 @@
+From: =?UTF-8?q?La=C3=A9rcio=20de=20Sousa?= <lbsousajr@gmail.com>
+Date: Thu, 24 May 2012 15:27:56 -0300
+Subject: Change desktop Icon= value from application-pdf to pdf
+
+---
+ .../desktop/pmmc-pte-sei-doc-printable.desktop.in  |    2 +-
+ linux/desktop/pmmc-pte-sei-doc.desktop.in          |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/linux/desktop/pmmc-pte-sei-doc-printable.desktop.in b/linux/desktop/pmmc-pte-sei-doc-printable.desktop.in
+index cbf9b71..5542451 100644
+--- a/linux/desktop/pmmc-pte-sei-doc-printable.desktop.in
++++ b/linux/desktop/pmmc-pte-sei-doc-printable.desktop.in
+@@ -4,6 +4,6 @@ Type=Application
+ Categories=Education;
+ Name=SEI - Manual de Ajuda (versão para impressão)
+ Exec=sei-doc-printable
+-Icon=application-pdf
++Icon=pdf
+ Terminal=false
+ Version=@VERSION@
+diff --git a/linux/desktop/pmmc-pte-sei-doc.desktop.in b/linux/desktop/pmmc-pte-sei-doc.desktop.in
+index 58575d4..8ecb14c 100644
+--- a/linux/desktop/pmmc-pte-sei-doc.desktop.in
++++ b/linux/desktop/pmmc-pte-sei-doc.desktop.in
+@@ -4,6 +4,6 @@ Type=Application
+ Categories=Education;
+ Name=SEI - Manual de Ajuda
+ Exec=sei-doc
+-Icon=application-pdf
++Icon=pdf
+ Terminal=false
+ Version=@VERSION@
+-- 
