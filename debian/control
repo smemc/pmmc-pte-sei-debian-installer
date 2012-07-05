@@ -5,8 +5,8 @@ Maintainer: Laércio de Sousa <lbsousajr@gmail.com>
 Build-Depends: debhelper (>= 9.0.0), librsvg2-bin
 Standards-Version: 3.9.3
 Homepage: http://www.orientadores.pmmc.com.br/cae/sei
-Vcs-Git: git://github.com/oiteam/pmmc-pte-sei-debian.git
-Vcs-Browser: https://github.com/oiteam/pmmc-pte-sei-debian.git
+Vcs-Git: git://github.com/oiteam/pmmc-pte-sei-debian-installer.git
+Vcs-Browser: https://github.com/oiteam/pmmc-pte-sei-debian-installer.git
 
 Package: sei
 Architecture: all
