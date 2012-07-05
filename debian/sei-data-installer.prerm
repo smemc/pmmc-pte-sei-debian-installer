@@ -16,9 +16,10 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
+. /usr/share/sei/functions
+
 remove_data() {
-    rm -rf /opt/pmmc/pte/sei/*
-    rmdir --ignore-fail-on-non-empty -p /opt/pmmc/pte/sei || true
+    sei_remove_data_or_doc /opt/pmmc/pte/sei
 }
 
 case "$1" in
