@@ -1,4 +1,4 @@
-sei (2.12.1.1+update1-1) quantal; urgency=low
+sei (2.12.1.1+update1-1) unstable; urgency=low
 
   * [c2206fd] Imported Upstream version 2.12.1.1+update1
   * [545f7bb] Update postinst scripts
