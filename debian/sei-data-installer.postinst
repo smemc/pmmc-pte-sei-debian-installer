@@ -62,27 +62,7 @@ download_and_unpack() {
 install_data() {
     DATA_ORIG=${1}/usr/share/pte-pmmc/menu_sei
     DATA_DEST=/opt/pmmc/pte/sei
-
-    for file in `find ${DATA_ORIG} -type f | grep -v "manua"`
-    do
-        newdir=`dirname ${file} | sed -e "s@${DATA_ORIG}@${DATA_DEST}@"`
-        install -D -m 644 ${file} ${newdir}/`basename ${file}`
-    done
-
-    cat > ${DATA_DEST}/sei.html <<EOF
-<html>
-<head>
-<style>html, body { margin: 0; padding: 0; }</style>
-</head>
-<body>
-<object width="100%" height="100%" data="sei.swf">
-<param name="movie" value="sei.swf" />
-</object>
-</body>
-</html>
-EOF
-
-    ln -s sei.html ${DATA_DEST}/index.html
+    sei_install_data ${DATA_ORIG} ${DATA_DEST}
 }
 
 case "${1}" in

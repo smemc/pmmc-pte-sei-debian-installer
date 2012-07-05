@@ -60,21 +60,9 @@ download_and_unpack() {
 }
 
 install_doc() {
-    PTE_DEST=/opt/pmmc/pte
     DOC_ORIG=${1}/usr/share/pte-pmmc/menu_sei/manual
-    DOC_DEST=${PTE_DEST}/doc/sei
-
-    for file in `find ${DOC_ORIG} -type f`
-    do
-        newfile=`echo ${file} | sed -e "s@${DOC_ORIG}@${DOC_DEST}@"`
-
-        case `basename ${file}` in
-            ajuda_sei.pdf) newfile=`dirname ${newfile}`/pmmc-pte-sei-doc.pdf ;;
-            ajuda_sei_impresso.pdf) newfile=`dirname ${newfile}`/pmmc-pte-sei-doc-printable.pdf ;;
-        esac
-
-        install -D -m 644 ${file} ${newfile}
-    done
+    DOC_DEST=/opt/pmmc/pte/doc/sei
+    sei_install_doc ${DOC_ORIG} ${DOC_DEST}
 }
 
 case "${1}" in
