@@ -1,3 +1,12 @@
+sei (2.12.1.1+update1-1) quantal; urgency=low
+
+  * [c2206fd] Imported Upstream version 2.12.1.1+update1
+  * [545f7bb] Update postinst scripts
+  * [98df94c] Update prerm scripts
+  * [af6c3c3] Update GitHub URL in debian/control
+
+ -- Laércio de Sousa <lbsousajr@gmail.com>  Thu, 05 Jul 2012 15:33:57 -0300
+
 sei (2.12.1.1-1) unstable; urgency=low
 
   * [2078f03] Imported Upstream version 2.12.1.1
