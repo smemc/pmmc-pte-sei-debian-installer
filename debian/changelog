@@ -1,3 +1,9 @@
+sei (2.12.1.1oi3-1) unstable; urgency=low
+
+  * [9823583] Imported Upstream version 2.12.1.1oi3
+
+ -- Laércio de Sousa <lbsousajr@gmail.com>  Tue, 10 Jul 2012 15:11:24 -0300
+
 sei (2.12.1.1oi1-1) unstable; urgency=low
 
   * [63c0cf0] Imported Upstream version 2.12.1.1oi1
